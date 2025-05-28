@@ -5,5 +5,7 @@ from Rcfapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.home),
+    path('', views.home), 
+    path('about/ ', views.about),
+    path('contact/', views.contact)
 ]
