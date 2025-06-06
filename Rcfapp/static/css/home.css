@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-image: url("{% static 'assets/pullpit.jpg' %}"); 
+  background-size: cover;         
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+  background-position: center;    
+  font-family: 'Segoe UI', sans-serif;
+}
