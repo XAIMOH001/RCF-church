@@ -1,18 +1,68 @@
-h1{
-    background-color: black;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-bottom: 60px;
+    /* prevents footer overlap */
+}
+
+/* Header Styles */
+header {
+  background-color: #004080; /* Royal Blue */
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #FFD700; /* Gold border */
+}
+
+.title-text h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #FFD700; /* Gold title */
+}
+
+.title-text p {
+  margin: 5px 0 0;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+nav {
+    background: #ffffff;
+    padding: 10px;
     text-align: center;
-    color: aliceblue;
-    font-size: 80px;
-    font-weight: bolder;
-    text-shadow: 12px 8px 12px yellow;
-}  
+}
 
-img{
-    width: 300px;
-    height: 300px;
-    margin-left: 20px;
-} 
+nav a {
+    color: #004080;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+    
+}   
 
-img:hover{
-    opacity: 0.5;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
