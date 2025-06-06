@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-  background-image: url("{% static 'assets/pullpit.jpg' %}"); 
-  background-size: cover;         
-  background-repeat: no-repeat;   
-  background-attachment: fixed;   
-  background-position: center;    
-  font-family: 'Segoe UI', sans-serif;
+.homepage-bg {
+  background-image: url("../assets/pullpit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  padding: 20px;
 }
+

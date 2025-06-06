@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    padding-bottom: 60px;
     /* prevents footer overlap */
 }
 
@@ -54,11 +53,8 @@ nav a {
 }
 nav a:hover {
     text-decoration: underline;
-    
-}   
-
+}
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background: #004080;
