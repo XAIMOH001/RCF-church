@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<section class="fellowship-page">
+  <div class="container">
+    <h1 class="page-title">Fellowship Groups</h1>
+
+    <blockquote class="bible-verse">
+      <p>“Not giving up meeting together, as some are in the habit of doing.”</p>
+      <cite>– Hebrews 10:25</cite>
+    </blockquote>
+
+    <div class="fellowship-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Group Name</th>
+            <th>Meeting Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shiloh</td>
+            <td>Wednesday</td>
+            <td>8:00 AM – 10:00 AM</td>
+          </tr>
+          <tr>
+            <td>Bethlehem</td>
+            <td>Thursday</td>
+            <td>5:00 PM – 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Jerusalem</td>
+            <td>Friday</td>
+            <td>4:00 PM – 5:00 PM</td>
+          </tr>
+          <tr>
+            <td>Judea</td>
+            <td>Friday</td>
+            <td>5:00 PM – 6:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -2,51 +2,165 @@
 {% block content %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
-<div class="homepage-bg">
 
-</div>
-
-<section class="about-page">
-  <div class="container">
-    <h1>About <span class="highlight">Risen Christ Fellowship</span></h1>
-
-    <div class="about-section">
+<section class="welcome-bg">
+  <div class="overlay">
+    <div class="welcome-content">
+      <h2>Welcome to Risen Christ Fellowship (RCF)</h2>
       <p>
-        Since its founding on <strong>20th September 2020</strong>, Risen Christ Fellowship has been steadily growing —
-        numerically, spiritually, structurally, and more. We shall continue to grow until we become what God wants us to become.
+        We are delighted to have you here! Whether you're a first-time visitor or a returning member,
+        you're part of a loving and growing family in Christ.
       </p>
-
       <p>
-        Our joy is to be <strong>compassionate</strong>, <strong>inclusive</strong>, and to walk with Jesus. Through <em>gospel, service,
-        worship, and missions</em>, we bring God closer to our hearts and to those around us.
+        Join us in worship, fellowship, and service as we grow spiritually and impact lives through the gospel.
       </p>
-
-      <p>
-        As a fellowship of believers, we have the honor of proclaiming the glory of Christ to one another in a loving and caring setting.
-      </p>
-
-      <p>
-        We are a place of <strong>prayer, deliverance, peace, and joy</strong> to all who join us. Our community is richly diverse, with
-        people of different ages and backgrounds coming together to worship and serve. We welcome all individuals seeking God’s love —
-        our doors are open to every soul welcoming Jesus into their heart.
-      </p>
-    </div>
-
-    <div class="about-section">
-      <h2>At the Heart of Everything We Do</h2>
-      <p>
-        As devoted members of <strong>Risen Christ Fellowship</strong>, we are constantly pursuing the calling to be fully devoted followers
-        of Christ. To build a true heaven on Earth, we live by the teachings of the Bible, are passionate about prayer, and are
-        grounded in spiritual accountability.
-      </p>
-
-      <p>
-        If you are interested in joining our Church, please reach out — we would love for you to visit!
-      </p>
+      <p><strong>You are welcome just as you are — and deeply loved.</strong></p>
     </div>
   </div>
 </section>
 
 
+
+<section class="about-page">
+    <div class="container">
+        <h1>About <span class="highlight">Risen Christ Fellowship</span></h1>
+
+        <div class="about-section">
+            <p>
+                Since its founding on <strong>20th September 2020</strong>, Risen Christ Fellowship has been steadily
+                growing —
+                numerically, spiritually, structurally, and more. We shall continue to grow until we become what God
+                wants us to become.
+            </p>
+
+            <p>
+                Our joy is to be <strong>compassionate</strong>, <strong>inclusive</strong>, and to walk with Jesus.
+                Through <em>gospel, service,
+                    worship, and missions</em>, we bring God closer to our hearts and to those around us.
+            </p>
+
+            <p>
+                As a fellowship of believers, we have the honor of proclaiming the glory of Christ to one another in a
+                loving and caring setting.
+            </p>
+
+            <p>
+                We are a place of <strong>prayer, deliverance, peace, and joy</strong> to all who join us. Our community
+                is richly diverse, with
+                people of different ages and backgrounds coming together to worship and serve. We welcome all
+                individuals seeking God’s love —
+                our doors are open to every soul welcoming Jesus into their heart.
+            </p>
+        </div>
+
+        <div class="about-section">
+            <h2>At the Heart of Everything We Do</h2>
+            <p>
+                As devoted members of <strong>Risen Christ Fellowship</strong>, we are constantly pursuing the calling
+                to be fully devoted followers
+                of Christ. To build a true heaven on Earth, we live by the teachings of the Bible, are passionate about
+                prayer, and are
+                grounded in spiritual accountability.
+            </p>
+
+            <p>
+                If you are interested in joining our Church, please reach out — we would love for you to visit!
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="fellowship-page">
+    <div class="container">
+        <h1 class="page-title">Fellowship Groups</h1>
+
+        <blockquote class="bible-verse">
+            <p>“Not giving up meeting together, as some are in the habit of doing.”</p>
+            <cite>– Hebrews 10:25</cite>
+        </blockquote>
+
+        <div class="fellowship-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Group Name</th>
+                        <th>Meeting Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shiloh</td>
+                        <td>Wednesday</td>
+                        <td>8:00 AM – 10:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Bethlehem</td>
+                        <td>Thursday</td>
+                        <td>5:00 PM – 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Jerusalem</td>
+                        <td>Friday</td>
+                        <td>4:00 PM – 5:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Judea</td>
+                        <td>Friday</td>
+                        <td>5:00 PM – 6:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="contact-page">
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map + Social -->
+            <div class="contact-media">
+                <!-- Google Map -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.780422687451!2d35.732844899999996!3d-0.24972819999998605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182a3df781ed74ff%3A0xe91fcf3e5bb39408!2sSuper%20Hardware!5e0!3m2!1sen!2ske!4v1749481889192!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    allowfullscreen="" loading="lazy">
+                </iframe>
+
+                <!-- Social Links -->
+                <div class="social-buttons">
+                    <a href="https://facebook.com/yourpage" class="social facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://wa.me/254712345678" class="social whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:Rcfmolo@gmail.com" class="social email">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a href="https://www.youtube.com/@YourChannelName" class="social youtube" target="_blank">
+                        <i class="fab fa-youtube"></i> YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
