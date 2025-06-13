@@ -37,7 +37,7 @@
 
 .about-page {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(80, 136, 181, 0.6);
   color: #222;
 }
 
@@ -59,7 +59,7 @@
 
 .about-section {
   margin-bottom: 40px;
-  background: white;
+  background: rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-left: 5px solid #004080;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -81,7 +81,7 @@
 /* Contact Page */
 .contact-page {
   padding: 60px 20px;
-  background-color: #f5f5f5;
+  background-color: rgba(80, 136, 181, 0.6);
   color: #222;
 }
 
@@ -101,34 +101,12 @@
 .contact-form,
 .contact-media {
   flex: 1 1 45%;
-  background: white;
+  background: rgba(0,0,0,0.1);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.contact-form button {
-  background: #004080;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background: #002c5f;
-}
 
 /* Social Buttons */
 .social-buttons {
@@ -173,7 +151,7 @@
 
 .fellowship-page {
   padding: 60px 20px;
-  background-color: #fdfdfd;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .page-title {
@@ -185,7 +163,7 @@
 
 .bible-verse {
   font-style: italic;
-  background: #e6f0ff;
+  background: rgba(80, 136, 181, 0.6);
   padding: 15px;
   border-left: 4px solid #004080;
   margin-bottom: 30px;
